@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <table style="width:100%">
+            <tr>
+                <div class="row">
+                    <th> <a href="/index.html"> shop</a></th>
+                    <th> <a href="#">contact</a></th>
+                    <td class="td1">
+
+                    </td>
+                    <th> <a href="#"> Log in</a></th>
+                    <th><a href="/cart.html"> cart</a></th>
+
+            </tr>
+        </table>
+    </header>
+    <div class="row">
+
+        <div class="col-6">
+            <!-- <img src="img/product1.png" class="img-fluid"> -->
+            <div id="root"> </div>
+
+        </div>
+        <div class="col-6" style="border: none;">
+            <div class="text8">
+                <div>
+                    FRESH FLOWERS / ROSY DELIGHT
+                    <h3> Rosy Delight - $100</h3>
+                    <p>Large exceptional bouquet composed of a selection of David Austin roses, known for their beauty
+                        and
+                        subtle fragrance. The bouquet is accompanied by seasonal foliage which will enhance these
+                        sublime
+                        flowers even</p>
+                    <div>
+
+                        <div class="counter">
+                            <a href="#">
+                                Quntity
+                            </a>
+                            <button id="increment">+</button>
+                            <p id="dsp"> 0</p>
+                            <button id="dicrement"> -</button>
+                        </div>
+                        <script>
+                            let counter = 0;
+                            const incEl = document.getElementById("increment");
+                            const dicEl = document.getElementById("dicrement");
+                            const dspEl = document.getElementById("dsp");
+                            function inc() {
+                                counter += +1;
+                                dspEl.innerHTML = counter;
+                            }
+                            function dec() {
+                                counter += -1;
+                                dspEl.innerHTML = counter;
+                            }
+                            incEl.addEventListener("click", inc);
+                            dicEl.addEventListener("click", dec);
+
+                        </script>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <img src="img/add product.png">
+            </div>
+            <div class="row" style="border: none" ;>
+                <div class=" col-6" style="border: none;">
+                    <div class="text01">
+                        <div>
+                            Price Options
+                        </div>
+                        <div>
+                            <input type="radio"> One purchase . Price $200
+                        </div>
+                        <div>
+                            <input type="radio">Subscribe now,and save 25% on this order.
+
+                        </div>
+                        <div>
+                            <button class="but2" id="addtobasket"> Add to basket </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="text9">
+        <h1> You may Also like</h1>
+    </div>
+    <div class="row  no-gutters">
+        <div class="col-3">
+            <img src="img/footer (1).png">
+
+        </div>
+        <div class="col-3">
+            <img src="img/footer (2).png">
+
+        </div>
+        <div class="col-3">
+            <img src="img/footer (3).png">
+
+        </div>
+        <div class="col-3">
+            <img src="img/footer (4).png">
+
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-3" style="border: none;">
+            <div class="text6">
+                <div>
+                    <p>Remember to offer beautiful flowers from Kyiv
+                    <p> LuxeBouquets Valentines Day,</p>
+                    <p> Mothers Day Christmas.. Reminds you 7 days before. No spom </p>
+                    </p> or sharing your address</p>
+                </div>
+                <div>
+                    <input type="email" placeholder=" Your Email">
+                </div>
+                <div>
+                    <button> REMIND</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-3" style="border: none;">
+            <div class="text6">
+                <div>
+                    <h5>
+                        <div>
+                            <p>Contact Us</p>
+
+                            Address
+                            <p> 15/4 Khreshchatyk Street, Kylv</p>
+                            Phone
+                            <p>+380980099777</p>
+                            General Enquiry
+                            <p>
+                                Kiew Florist Studio@gmail.com
+                                Follow Us</p>
+                            <i class="bi bi-instagram"></i> <i class="bi bi-pinterest"> </i> <i
+                                class="bi bi-facebook"></i> <i class="bi bi-twitter"></i> <i class="bi bi-telegram"></i>
+
+                        </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-3" style="border: none;">
+            <footer></footer>
+            <div class="text6">
+                <div>
+
+                    <p> Shop</p>
+                    <p> All Products</p>
+                    <p> Fresh Flowers</p>
+                    <p> Dried Flowers Live Plants Designer Vases Aroma Candles</p>
+                    <p> Freshener Diffuser</p>
+                    <p> Service</p>
+                    <p> Flower Subcription</p>
+                    <p>Wedding & Event Decor</p>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-3" style="border: none;">
+            <div class="text6">
+                <div>
+                    <p>About Us</p>
+                    <p> Our story</p>
+                    <p> Blog</p>
+                    <p>Shipping & returns Terms & conditions Privacy policy</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="/script.js"></script>
+    <script src="/cart.js"></script>
+    <script>
+        function onLoad(event) {
+            const flowerEl = document.querySelector("#root");
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const itemId = Number(urlParams.get("id"));
+
+            const item = flowers[itemId];
+
+
+
+            const pageview = displayImages(item);
+            flowerEl.appendChild(pageview);
+            const addToCartEl = document.getElementById('addtobasket');
+            addToCartEl.addEventListener('click', () => {
+                addToCart(item);
+
+            })
+        }
+        onLoad();
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
